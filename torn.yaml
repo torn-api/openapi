@@ -1,0 +1,239 @@
+openapi: '3.0.2'
+info:
+  title: Torn API by JotDe [2200962]
+  version: '1.0'
+  description: Open API 3.0 description of the Torn-API.
+servers:
+  - url: https://api.torn.com
+paths:
+  /user:
+    summary: Get information from your own user.
+    get:
+      parameters:
+        - in: query
+          name: selections
+          explode: false
+          schema:
+            $ref: '#/components/schemas/User'
+        - $ref: '#/components/parameters/From'
+        - $ref: '#/components/parameters/To'
+      responses:
+        '200':
+          $ref: '#/components/responses/ChedResponse'
+  /user/{id}:
+    summary: Get information from another user.
+    get:
+      parameters:
+        - $ref: '#/components/parameters/Id'
+        - in: query
+          name: selections
+          explode: false
+          schema:
+            $ref: '#/components/schemas/User'
+        - $ref: '#/components/parameters/From'
+        - $ref: '#/components/parameters/To'
+      responses:
+        '200':
+          $ref: 'torn.yaml#/components/responses/ChedResponse'
+  /property:
+    summary: Get information from your own properties.
+    get:
+      parameters:
+        - in: query
+          name: selections
+          explode: false
+          schema:
+            $ref: "#/components/schemas/Property" 
+        - $ref: '#/components/parameters/From'
+        - $ref: '#/components/parameters/To'
+      responses:
+        "200":
+          $ref: "#/components/responses/ChedResponse"
+  /property/{id}:
+    summary: Get information from properties by id.
+    get:
+      parameters:
+        - $ref: '#/components/parameters/Id'
+        - in: query
+          name: selections
+          explode: false
+          schema: 
+            $ref: '#/components/schemas/Property'
+        - $ref: '#/components/parameters/From'
+        - $ref: '#/components/parameters/To'
+      responses:
+        '200':
+          $ref: '#/components/responses/ChedResponse'
+  /faction:
+    summary: Get information from your own faction.
+    get:
+      parameters:
+        - in: query
+          name: selections
+          explode: false
+          schema:
+            $ref: "#/components/schemas/Faction" 
+        - $ref: '#/components/parameters/From'
+        - $ref: '#/components/parameters/To'
+      responses:
+        "200":
+          $ref: "#/components/responses/ChedResponse"
+  /faction/{id}:
+    summary: Get information from faction by id.
+    get:
+      parameters:
+        - $ref: '#/components/parameters/Id'
+        - in: query
+          name: selections
+          explode: false
+          schema: 
+            $ref: '#/components/schemas/Faction'
+        - $ref: '#/components/parameters/From'
+        - $ref: '#/components/parameters/To'
+      responses:
+        '200':
+          $ref: '#/components/responses/ChedResponse'
+  /company:
+    summary: Get information from your own Company.
+    get:
+      parameters:
+        - in: query
+          name: selections
+          explode: false
+          schema:
+            $ref: "#/components/schemas/Company" 
+      responses:
+        "200":
+          $ref: "#/components/responses/ChedResponse"
+  /company/{id}:
+    summary: Get information from Company by id.
+    get:
+      parameters:
+        - $ref: '#/components/parameters/Id'
+        - in: query
+          name: selections
+          explode: false
+          schema: 
+            $ref: '#/components/schemas/Company'
+      responses:
+        '200':
+          $ref: '#/components/responses/ChedResponse'
+  /market/{id}:
+    description: Get information from Item Market by id.
+    get:
+      parameters:
+        - $ref: '#/components/parameters/Id'
+        - in: query
+          name: selections
+          explode: false
+          schema: 
+            $ref: '#/components/schemas/Market'
+      responses:
+        '200':
+          $ref: '#/components/responses/ChedResponse'
+  /torn:
+    summary: Get basic information from Torn.
+    get:
+      parameters:
+        - in: query
+          name: selections
+          explode: false
+          schema:
+            $ref: "#/components/schemas/Torn" 
+      responses:
+        "200":
+          $ref: "#/components/responses/ChedResponse"
+  /torn/{id}:
+    summary: Get basic information from Torn by id.
+    get:
+      parameters:
+        - $ref: '#/components/parameters/Id'
+        - in: query
+          name: selections
+          explode: false
+          schema: 
+            $ref: '#/components/schemas/Torn'
+      responses:
+        '200':
+          $ref: '#/components/responses/ChedResponse'
+
+components:
+  schemas:
+    Torn:
+      type: array
+      items:
+        type: string
+        enum: [items, medals, honors, organisedcrimes, gyms, companies, properties, education, stats, stocks, 
+              factiontree, territory, rackets, bank, pawnshop, timestamp]
+    Market:
+      type: array
+      items:
+        type: string
+        enum: [bazaar, itemmarket, pointsmarket, timestamp]
+    Company:
+      type: array
+      items:
+        type: string
+        enum: [profile, detailed, stock, employees, news, newsfull, timestamp]
+    Faction:
+      type: array
+      items:
+        type: string
+        enum: [basic, territory, chain, currency, weapons, armor, temporary, medical, drugs, boosters, cesium, 
+              mainnews, mainnewsfull, attacknews, attacknewsfull, fundsnews, fundsnewsfull, armorynews, 
+              armorynewsfull, crimenews, crimenewsfull, membershipnews, membershipnewsfull, crimes, attacks, 
+              attacksfull, revives, revivesfull, upgrades, stats, contributors, donations, chains, timestamp]
+    Property:
+      type: array
+      items:
+        type: string
+        enum: [property, timestamp]
+    User:
+      type: array
+      items:
+        type: string
+        enum: [networth, bazaar, display, inventory, hof, travel, events, receivedevents, messages, education, 
+              medals, honors, notifications, personalstats, workstats, crimes, icons, cooldowns, money, perks, 
+              battlestats, bars, profile, basic, attacks, attacksfull, revives, revivesfull, stocks, properties, 
+              jobpoints, merits, refills, weaponexp, ammo, discord, gym, timestamp]
+
+  parameters:
+    Id:
+      in: path
+      name: id
+      description: Id for selected Path
+      required: true
+      schema:
+        type: integer
+        minimum: 1
+    From:
+      in: query
+      name: from
+      description: UNIX timestamp can be passed to filter some selections
+      schema:
+        type: integer
+        minimum: 0
+    To:
+      in: query
+      description: UNIX timestamp can be passed to filter some selections
+      name: to
+      schema:
+        type: integer
+        minimum: 0
+
+  responses:
+    ChedResponse:
+      description: OK, or not OK, that is the question. (William Chedspeare) - Expect everything.
+
+  securitySchemes:
+    ApiKeyAuth:       
+      type: apiKey
+      in: query       
+      name: key
+
+security:
+  - ApiKeyAuth: []
+
+externalDocs:
+  description: Learn more about user operations provided by this API.
+  url: https://www.torn.com/api.html
