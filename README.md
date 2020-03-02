@@ -2,6 +2,8 @@
 Open API 3.0 description of the Torn-API.\
 [see Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md)
 
+[Full Documentation](./docs/README.md)
+
 Online Resource hosted by JotDe \[2200962\]\
 [Try out](https://jotde.be/torn-api)
 
