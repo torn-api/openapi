@@ -1,0 +1,41 @@
+Request:
+  type: array
+  items:
+    type: string
+    enum:
+      [
+        basic,
+        territory,
+        chain,
+        currency,
+        weapons,
+        armor,
+        temporary,
+        medical,
+        drugs,
+        boosters,
+        cesium,
+        mainnews,
+        mainnewsfull,
+        attacknews,
+        attacknewsfull,
+        fundsnews,
+        fundsnewsfull,
+        armorynews,
+        armorynewsfull,
+        crimenews,
+        crimenewsfull,
+        membershipnews,
+        membershipnewsfull,
+        crimes,
+        attacks,
+        attacksfull,
+        revives,
+        revivesfull,
+        upgrades,
+        stats,
+        contributors,
+        donations,
+        chains,
+        timestamp,
+      ]

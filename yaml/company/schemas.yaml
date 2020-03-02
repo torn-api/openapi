@@ -1,0 +1,5 @@
+Request:
+  type: array
+  items:
+    type: string
+    enum: [profile, detailed, stock, employees, news, newsfull, timestamp]

@@ -1,0 +1,47 @@
+openapi: '3.0.2'
+info:
+  title: Torn API by JotDe [2200962]
+  version: '1.0'
+  description: Open API 3.0 description of the Torn-API.
+
+servers:
+  - url: https://api.torn.com
+
+paths:
+  /user:
+    $ref: user/path.yaml
+  /user/{userId}:
+    $ref: user/path-by-id.yaml
+  /property:
+    $ref: property/path.yaml
+  /property/{propertyId}:
+    $ref: property/path-by-id.yaml
+  /faction:
+    $ref: faction/path.yaml
+  /faction/{factionId}:
+    $ref: faction/path-by-id.yaml
+  /company:
+    $ref: company/path.yaml
+  /company/{companyId}:
+    $ref: company/path-by-id.yaml
+  /market/{marketItemId}:
+    $ref: market/path-by-id.yaml
+  /torn:
+    $ref: torn/path.yaml
+  /torn/{id}:
+    $ref: torn/path-by-id.yaml
+
+components:
+  securitySchemes:
+    ApiKeyAuth:       
+      type: apiKey
+      in: query       
+      name: key
+
+
+security:
+  - ApiKeyAuth: []
+
+externalDocs:
+  description: Learn more about user operations provided by this API.
+  url: https://www.torn.com/api.html

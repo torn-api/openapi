@@ -1,0 +1,14 @@
+From:
+  in: query
+  name: from
+  description: UNIX timestamp can be passed to filter some selections
+  schema:
+    type: integer
+    minimum: 0
+To:
+  in: query
+  description: UNIX timestamp can be passed to filter some selections
+  name: to
+  schema:
+    type: integer
+    minimum: 0

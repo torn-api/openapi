@@ -1,0 +1,11 @@
+summary: Get basic information from Torn.
+get:
+  parameters:
+    - in: query
+      name: selections
+      explode: false
+      schema:
+        $ref: "schemas.yaml#/Request"
+  responses:
+    "200":
+      $ref: '../responses.yaml#/DefaultResponse'

@@ -1,0 +1,5 @@
+Request:
+  type: array
+  items:
+    type: string
+    enum: [property, timestamp]

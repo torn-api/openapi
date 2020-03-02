@@ -1,0 +1,6 @@
+Request:
+  type: array
+  items:
+    type: string
+    enum: [items, medals, honors, organisedcrimes, gyms, companies, properties, education, stats, stocks, 
+          factiontree, territory, rackets, bank, pawnshop, timestamp]

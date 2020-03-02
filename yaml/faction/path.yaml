@@ -1,0 +1,13 @@
+summary: Get information from your own faction.
+get:
+  parameters:
+    - in: query
+      name: selections
+      explode: false
+      schema:
+        $ref: "schemas.yaml#/Request"
+    - $ref: '../parameters.yaml#/From'
+    - $ref: '../parameters.yaml#/To'
+  responses:
+    "200":
+      $ref: '../responses.yaml#/DefaultResponse'

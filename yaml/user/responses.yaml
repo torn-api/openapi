@@ -1,0 +1,10 @@
+Networth:
+  description: OK, or not OK, that is the question. (William Chedspeare)
+  content:
+    application/json:
+      schema:
+        anyOf:
+          - $ref: 'schemas.yaml#/Networth'
+      examples:
+        Networth:
+          $ref: 'examples.yaml#/Networth'

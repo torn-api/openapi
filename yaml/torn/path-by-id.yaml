@@ -1,0 +1,18 @@
+summary: Get basic information from Torn by id.
+get:
+  parameters:
+    - in: path
+      name: id
+      description: ID
+      required: true
+      schema:
+        type: integer
+        minimum: 1
+    - in: query
+      name: selections
+      explode: false
+      schema: 
+        $ref: "schemas.yaml#/Request"
+  responses:
+    '200':
+      $ref: '../responses.yaml#/DefaultResponse'
