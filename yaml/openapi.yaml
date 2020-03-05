@@ -1,7 +1,7 @@
-openapi: '3.0.2'
+openapi: 3.0.3
 info:
   title: Torn API by JotDe [2200962]
-  version: '1.0'
+  version: 1.0.0
   description: Open API 3.0 description of the Torn-API.
 
 servers:

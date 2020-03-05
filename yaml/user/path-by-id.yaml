@@ -1,5 +1,7 @@
 summary: Get information from another user.
 get:
+  tags:
+    - User
   parameters:
     - in: path
       name: userId
@@ -12,9 +14,9 @@ get:
       name: selections
       explode: false
       schema:
-        $ref: 'schemas.yaml#/Request'
-    - $ref: '../parameters.yaml#/From'
-    - $ref: '../parameters.yaml#/To'
+        $ref: schemas.yaml#/Request
+    - $ref: ../parameters.yaml#/From
+    - $ref: ../parameters.yaml#/To
   responses:
-    '200':
-      $ref: 'responses.yaml#/Networth'
+    200:
+      $ref: responses.yaml

@@ -16,58 +16,41 @@ Networth:
       properties:
         pending: 
           type: integer
-          example: 0
         wallet: 
           type: integer
-          example: 991394
         bank: 
           type: integer
-          example: 1330958747
         points: 
           type: integer
-          example: 19666880
         cayman: 
           type: integer
-          example: 0
         vault: 
           type: integer
-          example: 0
         piggybank: 
           type: integer
-          example: 0
         items: 
           type: integer
-          example: 726665019
         displaycase: 
           type: integer
-          example: 0
         bazaar:
           type: integer
-          example: 0
         properties: 
           type: integer
-          example: 0
         stockmarket: 
           type: integer
-          example: 1621743
         auctionhouse: 
           type: integer
-          example: 0
         company: 
           type: integer
-          example: 0
         bookie: 
           type: integer
-          example: 0
         loan: 
           type: integer
-          example: 0
         unpaidfees: 
           type: integer
-          example: -260000
         total: 
           type: integer
-          example: 2085643783
         parsetime: 
           type: float
-          example: 0.03911590576171875
+
+
