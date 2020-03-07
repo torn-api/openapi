@@ -19,4 +19,11 @@ get:
     - $ref: ../parameters.yaml#/To
   responses:
     200:
-      $ref: responses.yaml
+      description: OK, or not OK, that is the question. (William Chedspeare)
+      content:
+        application/json:
+          schema:
+            anyOf:
+              - $ref: schemas.yaml#/Networth
+          examples:
+            networth:

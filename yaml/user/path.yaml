@@ -12,4 +12,805 @@ get:
     - $ref: ../parameters.yaml#/To
   responses:
     200:
-      $ref: responses.yaml
+      description: OK, or not OK, that is the question. (William Chedspeare)
+      content:
+        application/json:
+          schema:
+            anyOf:
+              - $ref: schemas.yaml#/Networth
+          examples:
+            networth:
+              value:
+                networth:
+                  auctionhouse: 0
+                  bank: 1330958747
+                  bazaar: 587
+                  bookie: 8640000
+                  cayman: 0
+                  company: 0
+                  displaycase: 0
+                  items: 750313958
+                  loan: 0
+                  parsetime: 0.0845789909362793
+                  pending: 1625555
+                  piggybank: 0
+                  points: 22887150
+                  properties: 0
+                  stockmarket: 0
+                  total: 2115387521
+                  unpaidfees: -910000
+                  vault: 0
+                  wallet: 1871524
+
+            bazaar:
+              value:
+                bazaar:
+                  - ID: 215
+                    market_price: 470
+                    name: Kitten Plushie
+                    price: 850
+                    quantity: 1
+                    type: Plushie
+                  - ID: 186
+                    name: Sheep Plushie
+                    type: Plushie
+                    quantity: 11
+                    price: 600
+                    market_price: 473
+
+            display:
+              description: Needs example.
+              value:
+                display: null
+
+            inventory:
+              value:
+                inventory:
+                  - ID: 557
+                    equipped: 0
+                    market_price: 61000
+                    name: Advent Calendar
+                    quantity: 1
+                    type: Other
+                  - ID: 8
+                    equipped: 0
+                    market_price: 2771
+                    name: Axe
+                    quantity: 2
+                    type: Melee
+
+            hof:
+              value:
+                halloffame:
+                  attacks:
+                    rank: 28439
+                    value: 782
+                  battlestats:
+                    rank: 28708
+                    value: 3193449
+                  busts:
+                    rank: 110510
+                    value: 1
+                  defends:
+                    rank: 120019
+                    value: 14
+                  level:
+                    rank: 24932
+                    value: 39
+                  networth:
+                    rank: 22208
+                    value: 2105717398
+                  offences:
+                    rank: 33975
+                    value: 6454
+                  rank:
+                    rank: 26091
+                    value: 15
+                  respect:
+                    rank: 55
+                    value: 2636228
+                  revives:
+                    rank: 0
+                    value: 0
+                  traveled:
+                    rank: 6963
+                    value: 1026
+                  workstats:
+                    rank: 184073
+                    value: 47133
+
+            travel:
+              value:
+                travel:
+                  departed: 1583587070
+                  destination: Torn
+                  time_left: 5171
+                  timestamp: 1583593850
+
+            events:
+              value:
+                events:
+                  "630812114":
+                    event:
+                      <a href = http://www.torn.com/profiles.php?XID=824921>mbncd</a> bought
+                      you out of jail for $1,464,701.
+                    seen: 1
+                    timestamp: 1581746000
+                  "630874432":
+                    event: Congratulations! You upgraded your level to 38!
+                    seen: 1
+                    timestamp: 1581755262
+                  "631021814":
+                    event:
+                      You came <b>2nd</b> in the Parkland race and have received 2 racing points!
+                      Your best lap was 04:07.21. [<a href = "http://www.torn.com/loader.php?sid=racing&tab=log&raceID=3749794">View</a>]
+                    seen: 1
+                    timestamp: 1581779884
+
+            receivedevents:
+              description: Needs example.
+              value:
+                receivedevents: []
+
+            messages:
+              value:
+                messages:
+                  "205748939":
+                    ID: 2117233
+                    name: TheUltimate
+                    read: 1
+                    seen: 1
+                    timestamp: 1549768019
+                    title: Upkeep
+                    type: Faction newsletter
+                  "205777842":
+                    ID: 2114314
+                    name: Eldarian
+                    read: 1
+                    seen: 1
+                    timestamp: 1549917690
+                    title: Faction Newsletter- war
+                    type: Faction newsletter
+                  "205817297":
+                    ID: 2114314
+                    name: Eldarian
+                    read: 1
+                    seen: 1
+                    timestamp: 1550090990
+                    title: Faction Newsletter - war
+                    type: Faction newsletter
+
+            education:
+              value:
+                education_completed:
+                  - 113
+                  - 126
+                education_current: 18
+                education_timeleft: 1297418
+
+            medals:
+              value:
+                medals_awarded:
+                  - 38
+                  - 39
+                  - 237
+                medals_time:
+                  - 1544040542
+                  - 1544365375
+                  - 1544393760
+
+            honors:
+              value:
+                honors_awarded:
+                  - 730
+                  - 731
+                  - 734
+                honors_time:
+                  - 1568389109
+                  - 1581639588
+                  - 1574894284
+
+            notifications:
+              value:
+                notifications:
+                  awards: 0
+                  competition: 0
+                  events: 0
+                  messages: 0
+
+            personalstats:
+              value:
+                personalstats:
+                  alcoholused: 63
+                  argtravel: 16
+                  attackcriticalhits: 393
+                  attackdamage: 938382
+                  attackhits: 2676
+                  attackmisses: 563
+                  attacksassisted: 5
+                  attacksdraw: 4
+                  attackslost: 49
+                  attacksstealthed: 590
+                  attackswon: 782
+                  awards: 144
+                  axehits: 33
+                  bazaarcustomers: 195
+                  bazaarprofit: 1505455649
+                  bazaarsales: 28287
+                  bestdamage: 2392
+                  bestkillstreak: 75
+                  boostersused: 2
+                  bountiescollected: 36
+                  bountiesplaced: 18
+                  bountiesreceived: 12
+                  candyused: 139
+                  cantravel: 7
+                  caytravel: 2
+                  chitravel: 280
+                  cityfinds: 105
+                  cityitemsbought: 969
+                  consumablesused: 289
+                  contractscompleted: 64
+                  daysbeendonator: 455
+                  defendslost: 222
+                  defendswon: 14
+                  drugsused: 216
+                  dubtravel: 3
+                  dukecontractscompleted: 64
+                  dumpfinds: 93
+                  dumpsearches: 93
+                  energydrinkused: 87
+                  exttaken: 6
+                  factionmailssent: 7
+                  friendmailssent: 3
+                  grehits: 2
+                  h2hhits: 33
+                  hawtravel: 2
+                  highestbeaten: 49
+                  hospital: 415
+                  investedprofit: 369255642
+                  itemsbought: 172
+                  itemsboughtabroad: 29062
+                  itemsdumped: 69
+                  itemssent: 4
+                  jailed: 37
+                  japtravel: 14
+                  killstreak: 0
+                  largestmug: 755308
+                  logins: 1929
+                  lontravel: 658
+                  mailssent: 19
+                  medicalitemsused: 333
+                  mextravel: 11
+                  missioncreditsearned: 907
+                  missionscompleted: 1
+                  moneyinvested: 26875684550
+                  moneymugged: 3635189
+                  networth: 2105717398
+                  networthauctionhouse: 0
+                  networthbank: 1330958747
+                  networthbazaar: 588
+                  networthbookie: 8640000
+                  networthcayman: 0
+                  networthcompany: 0
+                  networthdisplaycase: 0
+                  networthitems: 740624698
+                  networthloan: 0
+                  networthpending: 1625555
+                  networthpiggybank: 0
+                  networthpoints: 22915280
+                  networthproperties: 0
+                  networthstockmarket: 0
+                  networthunpaidfees: -780000
+                  networthvault: 0
+                  networthwallet: 1732530
+                  onehitkills: 185
+                  opitaken: 9
+                  organisedcrimes: 91
+                  overdosed: 4
+                  peoplebusted: 1
+                  piehits: 676
+                  pishits: 5
+                  pointsbought: 5600
+                  pointssold: 5866
+                  racesentered: 190
+                  raceswon: 55
+                  racingpointsearned: 272
+                  racingskill: 3
+                  receivedbountyvalue: 1400001
+                  refills: 23
+                  rehabcost: 4250000
+                  rehabs: 17
+                  respectforfaction: 1847
+                  revivesreceived: 16
+                  rifhits: 31
+                  roundsfired: 2069
+                  shohits: 1
+                  slahits: 10
+                  soutravel: 15
+                  spousemailssent: 2
+                  switravel: 18
+                  territorytime: 122941
+                  totalbountyreward: 3093129
+                  totalbountyspent: 1374328
+                  trades: 1
+                  trainsreceived: 279
+                  traveltime: 15768420
+                  traveltimes: 1026
+                  unarmoredwon: 3
+                  useractivity: 835421
+                  victaken: 1
+                  virusescoded: 17
+                  weaponsbought: 18
+                  xantaken: 198
+                  yourunaway: 1
+
+            workstats:
+              value:
+                endurance: 29841
+                intelligence: 16588
+                manual_labor: 704
+
+            crimes:
+              value:
+                criminalrecord:
+                  auto_theft: 0
+                  computer_crimes: 2007
+                  drug_deals: 0
+                  fraud_crimes: 1007
+                  murder: 59
+                  other: 325
+                  selling_illegal_products: 238
+                  theft: 2818
+                  total: 6454
+
+            icons:
+              value:
+                icons:
+                  icon19:
+                    Education - Currently completing the Medieval Archaeology course - 15
+                    days, 0 hours, 23 minutes and 37 seconds
+                  icon27: Company - Employee of GaebeliGroceries (Grocery Store)
+                  icon28: Cashier's Checks - Checks are waiting to be cashed in at the bank
+                  icon29:
+                    Bank Investment - Current bank investment worth $1,330,958,747 - 16 days,
+                    17 hours, 54 minutes and 36 seconds
+                  icon35: Bazaar - You have items in your bazaar
+                  icon4: "Subscriber - Donator status: 104 days - Subscriber until: 06/04/20"
+                  icon57:
+                    Minor Drug Addiction - Your battle stats in combat are slightly reduced
+                    (-3%)
+                  icon6: Male
+                  icon71: Traveling
+                  icon8: Married - To Suriv
+                  icon9: Faction - Member of Impulse
+
+            cooldowns:
+              value:
+                cooldowns:
+                  booster: 0
+                  drug: 0
+                  medical: 0
+
+            money:
+              value:
+                cayman_bank: 0
+                city_bank:
+                  amount: 1330958747
+                  time_left: 1446875
+                money_onhand: 1871524
+                networth: 2105717398
+                points: 485
+                vault_amount: null
+
+            perks:
+              value:
+                company_perks:
+                  - + 10% consumable cooldown reduction
+                  - + 10% consumable boost
+                education_perks:
+                  - + 10% Japanese blade damage
+                  - + 2% Melee damage
+                  - + 1% Damage
+                  - + 1% Strength gym gains
+                enhancer_perks:
+                  - + 10% Church praying bonus (Rosary Beads)
+                  - + 4 Travel items (Large Suitcase)
+                faction_perks:
+                  - + Increases defense gym gains by 10%
+                  - + Increases dexterity gym gains by 12%
+                job_perks: []
+                merit_perks:
+                  - + Bank interest rate
+                  - + 21% Crime success
+                  - "- 20% Education length"
+                property_perks:
+                  - + Access to airstrip
+                  - + 2% Damage
+                  - + 2% Gym gains
+                stock_perks: []
+
+            battlestats:
+              value:
+                defense: "420.2134"
+                defense_info:
+                  - +2% to Defense from Education
+                  - -3% to Defense from Addiction
+                defense_modifier: -1
+                dexterity: "420.3396"
+                dexterity_info:
+                  - +2% to Dexterity from Education
+                  - -3% to Dexterity from Addiction
+                dexterity_modifier: -1
+                speed: "420.7968"
+                speed_info:
+                  - +2% to Speed from Education
+                  - -3% to Speed from Addiction
+                speed_modifier: -1
+                strength: "420.9041"
+                strength_info:
+                  - +2% to Strength from Education
+                  - -3% to Strength from Addiction
+                strength_modifier: -1
+                total: "42.2539"
+
+            bars:
+              value:
+                chain:
+                  cooldown: 0
+                  current: 0
+                  maximum: 25000
+                  modifier: 1
+                  timeout: 0
+                energy:
+                  current: 95
+                  fulltime: 6317
+                  increment: 5
+                  interval: 600
+                  maximum: 150
+                  ticktime: 317
+                happy:
+                  current: 3699
+                  fulltime: 9017
+                  increment: 5
+                  interval: 900
+                  maximum: 3750
+                  ticktime: 17
+                life:
+                  current: 1825
+                  fulltime: 0
+                  increment: 91
+                  interval: 300
+                  maximum: 1825
+                  ticktime: 17
+                nerve:
+                  current: 34
+                  fulltime: 11417
+                  increment: 1
+                  interval: 300
+                  maximum: 73
+                  ticktime: 17
+                server_time: 1583588683
+
+            profile:
+              value:
+                age: 457
+                awards: 144
+                basicicons:
+                  icon27: Company - Employee of GaebeliGroceries (Grocery Store)
+                  icon35: Bazaar - This person has items in their bazaar for sale
+                  icon4: Subscriber
+                  icon6: Male
+                  icon71: Traveling
+                  icon8: Married - To Suriv
+                  icon9: Faction - Member of Impulse
+                donator: 1
+                enemies: 1
+                faction:
+                  days_in_faction: 124
+                  faction_id: 33783
+                  faction_name: Impulse
+                  position: Member
+                forum_posts: 22
+                friends: 4
+                gender: Male
+                job:
+                  company_id: 66251
+                  company_name: GaebeliGroceries
+                  position: Employee
+                karma: 9
+                last_action:
+                  relative: 25 minutes ago
+                  status: Offline
+                  timestamp: 1583587137
+                level: 39
+                life:
+                  current: 1825
+                  fulltime: 0
+                  increment: 91
+                  interval: 300
+                  maximum: 1825
+                  ticktime: 17
+                married:
+                  duration: 145
+                  spouse_id: 2395163
+                  spouse_name: Suriv
+                name: JotDe
+                player_id: 2200962
+                property: Private Island
+                property_id: 463266
+                rank: Professional Importer
+                role: Civilian
+                signup: "2018-12-05 17:03:17"
+                states:
+                  hospital_timestamp: 0
+                  jail_timestamp: 0
+                status:
+                  color: blue
+                  description: Returning to Torn from United Kingdom
+                  details: ""
+                  state: Traveling
+                  until: 0
+
+            basic:
+              value:
+                gender: Male
+                level: 39
+                name: JotDe
+                player_id: 2200962
+                status:
+                  color: blue
+                  description: Returning to Torn from United Kingdom
+                  details: ""
+                  state: Traveling
+                  until: 0
+
+            attacks:
+              value:
+                attacks:
+                  "96449443":
+                    attacker_faction: 8836
+                    attacker_factionname: Vinerri
+                    attacker_id: 19752
+                    attacker_name: deacon
+                    chain: 3
+                    code: 33113e37207ad68cad5133511b2f604e
+                    defender_faction: 33783
+                    defender_factionname: Impulse
+                    defender_id: 2200962
+                    defender_name: JotDe
+                    modifiers:
+                      chainBonus: 1
+                      fairFight: 3
+                      groupAttack: 1
+                      overseas: 1
+                      retaliation: 1
+                      war: 2
+                    respect_gain: 0
+                    result: Hospitalized
+                    stealthed: 0
+                    timestamp_ended: 1582022824
+                    timestamp_started: 1582022815
+                  "96451605":
+                    attacker_faction: ""
+                    attacker_factionname: null
+                    attacker_id: ""
+                    attacker_name: null
+                    chain: 0
+                    code: 4e706af91189720dc6cb3c15abfaef83
+                    defender_faction: 33783
+                    defender_factionname: Impulse
+                    defender_id: 2200962
+                    defender_name: JotDe
+                    modifiers:
+                      chainBonus: "1.85"
+                      fairFight: "1.18"
+                      groupAttack: 1
+                      overseas: 1
+                      retaliation: 1
+                      war: 1
+                    respect_gain: 0
+                    result: Hospitalized
+                    stealthed: 1
+                    timestamp_ended: 1582025439
+                    timestamp_started: 1582025434
+
+            attacksfull:
+              value:
+                attacks:
+                  "97289797":
+                    attacker_faction: ""
+                    attacker_id: ""
+                    code: fa9eaa88234ba729949777fdfb2ed255
+                    defender_faction: 33783
+                    defender_id: 2200962
+                    respect_gain: 0
+                    result: Hospitalized
+                    stealthed: 1
+                    timestamp_ended: 1582939490
+                    timestamp_started: 1582939488
+                  "97611940":
+                    attacker_faction: 8566
+                    attacker_id: 246258
+                    code: fa87924364a908d55706c72c221c4666
+                    defender_faction: 33783
+                    defender_id: 2200962
+                    respect_gain: 0
+                    result: Mugged
+                    stealthed: 0
+                    timestamp_ended: 1583211327
+                    timestamp_started: 1583211320
+
+            revives:
+              value:
+                revives:
+                  "216165":
+                    reviver_faction: 8867
+                    reviver_factionname: DawnRazers
+                    reviver_id: 1100012
+                    reviver_name: liable
+                    target_faction: 8322
+                    target_factionname: MORTAL LEGENDS 2
+                    target_id: 2200962
+                    target_name: JotDe
+                    timestamp: 1562243935
+                  "667160":
+                    reviver_faction: 9745
+                    reviver_factionname: Emergency Room
+                    reviver_id: 2259889
+                    reviver_name: SandyFeline
+                    target_faction: 33783
+                    target_factionname: Impulse
+                    target_id: 2200962
+                    target_name: JotDe
+                    timestamp: 1575922645
+
+            revivesfull:
+              value:
+                revives:
+                  "216165":
+                    reviver_faction: 8867
+                    reviver_id: 1100012
+                    target_faction: 8322
+                    target_id: 2200962
+                    timestamp: 1562243935
+                  "667160":
+                    reviver_faction: 9745
+                    reviver_id: 2259889
+                    target_faction: 33783
+                    target_id: 2200962
+                    timestamp: 1575922645
+
+            stocks:
+              description: Needs example.
+              value: 
+                stocks: null
+
+            properties:
+              value:
+                properties:
+                  "463266":
+                    cost: 500000000
+                    happy: 3750
+                    marketprice: 940788000
+                    modifications:
+                      airstrip: 1
+                      hot_tub: 1
+                      interior: 2
+                      medical_facility: 1
+                      open_bar: 1
+                      pool: 3
+                      sauna: 1
+                      shooting_range: 1
+                      vault: 3
+                      yacht: 0
+                    owner_id: 375042
+                    property: Private Island
+                    property_type: 13
+                    staff:
+                      butler: 0
+                      doctor: 0
+                      guard: 0
+                      maid: 0
+                      pilot: 1
+                    staff_cost: 30000
+                    status: Currently being rented
+                    upkeep: 100000
+
+            jobpoints:
+              value:
+                jobpoints:
+                  companies:
+                    "12":
+                      jobpoints: 9
+                      name: Grocery Store
+                    "20":
+                      jobpoints: 241
+                      name: Property Broker
+                  jobs:
+                    army: 5
+                    casino: 9
+                    education: 5
+                    grocer: 5
+                    law: 5
+                    medical: 5
+
+            merits:
+              value:
+                merits:
+                  Awareness: 0
+                  Bank Interest: 10
+                  Brawn: 0
+                  Club Mastery: 0
+                  Crime Experience: 7
+                  Critical Hit Rate: 0
+                  Education Length: 10
+                  Evasion: 0
+                  Heavy Artillery Mastery: 0
+                  Hospitalizing: 0
+                  Life Points: 0
+                  Machine Gun Mastery: 0
+                  Masterful Looting: 0
+                  Mechanical Mastery: 0
+                  Nerve Bar: 0
+                  Piercing Mastery: 0
+                  Pistol Mastery: 0
+                  Protection: 0
+                  Rifle Mastery: 0
+                  SMG Mastery: 0
+                  Sharpness: 0
+                  Shotgun Mastery: 0
+                  Slashing Mastery: 0
+                  Stealth: 0
+                  Temporary Mastery: 0
+
+            refills:
+              value:
+                refills:
+                  energy_refill_used: false
+                  nerve_refill_used: false
+                  special_refills_available: 0
+                  token_refill_used: false
+
+            weaponexp:
+              description: Needs example.
+              value:
+                weaponexp: []
+
+            ammo:
+              value:
+                ammo:
+                  - equipped: 0
+                    quantity: 3954
+                    size: 12 Gauge Cartridge
+                    type: Standard
+                  - equipped: 0
+                    quantity: 5376
+                    size: 9mm Parabellum Round
+                    type: Standard
+                  - equipped: 0
+                    quantity: 179
+                    size: 7.62 mm Rifle Round
+                    type: Standard
+                  - equipped: 1
+                    quantity: 6653
+                    size: 5.56mm Rifle Round
+                    type: Standard
+                  - equipped: 1
+                    quantity: 1999
+                    size: Liter of Fuel
+                    type: Standard
+
+            discord:
+              value:
+                discord:
+                  discordID: "622411884888457227"
+                  userID: 2200962
+
+            gym:
+              value:
+                active_gym: 26
+
+            timestamp:
+              value:
+                timestamp: 1583588687
